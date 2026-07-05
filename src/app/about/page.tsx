@@ -14,39 +14,41 @@ export default function AboutPage() {
       {/* SECTION 1 -- HEADSHOT AND BIO */}
       <section className="bg-mcg-bone px-5 pt-32 pb-20 md:px-12 md:pt-40 md:pb-28">
         <div className="mx-auto max-w-[920px]">
-          {/* Full-width headshot */}
-          <Image
-            src="/founder-photos/Ed-Thomas-Headshot-3.JPG"
-            alt="Ed Thomas, Founder of Mission Clarity Group"
-            width={920}
-            height={613}
-            priority
-            className="h-auto w-full"
-          />
+          {/* Portrait and bio side by side on desktop */}
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-[380px_1fr] md:gap-14">
+            <div className="relative aspect-[3/4] w-full overflow-hidden md:w-[380px]">
+              <Image
+                src="/founder-photos/Ed-Thomas-Headshot-3.JPG"
+                alt="Ed Thomas, Founder of Mission Clarity Group"
+                fill
+                priority
+                className="object-cover object-top"
+              />
+            </div>
 
-          {/* Bio below */}
-          <div className="mt-12">
-            <span className="font-body text-[11px] font-medium uppercase tracking-[0.15em] text-mcg-sage">
-              Founder
-            </span>
-            <h1 className="mt-3">Ed Thomas</h1>
-            <div className="mt-8 space-y-6 font-body text-[clamp(16px,1.8vw,17px)] leading-[1.65] text-mcg-sage">
-              <p>
-                Ed Thomas is the Founder and Lead Principal of Mission Clarity
-                Group, a strategic advisory and performance development firm
-                serving executives, entrepreneurs, professional athletes, elite
-                teams, and high-performing organizations. With more than two
-                decades of experience in high-stakes environments, Ed has built
-                his career around leadership, resilience, decision-making, and
-                human performance under pressure.
-              </p>
-              <p>
-                His background includes service as an Army Ranger, Delta Force
-                Operator, and Paramilitary work with the Central Intelligence
-                Agency. These experiences shaped his understanding of strategic
-                clarity, decentralized leadership, emotional discipline, and
-                sustained performance in demanding conditions.
-              </p>
+            <div className="flex flex-col justify-center">
+              <span className="font-body text-[11px] font-medium uppercase tracking-[0.15em] text-mcg-sage">
+                Founder
+              </span>
+              <h1 className="mt-3">Ed Thomas</h1>
+              <div className="mt-8 space-y-6 font-body text-[clamp(16px,1.8vw,17px)] leading-[1.65] text-mcg-sage">
+                <p>
+                  Ed Thomas is the Founder and Lead Principal of Mission Clarity
+                  Group, a strategic advisory and performance development firm
+                  serving executives, entrepreneurs, professional athletes, elite
+                  teams, and high-performing organizations. With more than two
+                  decades of experience in high-stakes environments, Ed has built
+                  his career around leadership, resilience, decision-making, and
+                  human performance under pressure.
+                </p>
+                <p>
+                  His background includes service in the 75th Ranger Regiment, as
+                  a Delta Force Operator, and Paramilitary work with the Central
+                  Intelligence Agency. These experiences shaped his understanding
+                  of strategic clarity, decentralized leadership, emotional
+                  discipline, and sustained performance in demanding conditions.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -63,7 +65,7 @@ export default function AboutPage() {
         <div className="relative z-10 mx-auto max-w-[680px]">
           <div className="mx-auto mb-8 h-px w-20 bg-mcg-gold" />
           <p className="text-center font-display text-[clamp(22px,2.8vw,28px)] font-500 leading-[1.35] text-mcg-bone">
-            Sustained elite performance begins with clarity - clarity of
+            Sustained elite performance begins with clarity, clarity of
             mission, mindset, and action under pressure.
           </p>
           <div className="mx-auto mt-8 h-px w-20 bg-mcg-gold" />
@@ -79,18 +81,19 @@ export default function AboutPage() {
           <p>
             Today, through Mission Clarity Group, Ed helps leaders, athletes,
             and organizations improve decision-making, adaptability, culture,
-            and long-term performance. Drawing from neuroscience, behavioral
-            science, leadership psychology, and elite operational principles,
-            his work focuses on helping clients perform at a high level without
-            sacrificing well-being.
+            and long-term performance. A skilled facilitator and Certified
+            Executive Coach and DISCflex Coach with training in adult education,
+            he draws from neuroscience, behavioral science, leadership
+            psychology, and elite operational principles to help clients perform
+            at a high level without sacrificing well-being.
           </p>
           <p>
-            Mission Clarity Group&apos;s approach is discreet, personalized,
+            Mission Clarity Group's approach is discreet, personalized,
             and relationship-driven. Through executive advisory engagements,
             leadership retreats, athlete development, and private coaching, Ed
             serves as a trusted advisor to individuals and teams navigating
             growth, pressure, and transition. His philosophy is simple:
-            sustained elite performance begins with clarity - clarity of
+            sustained elite performance begins with clarity, clarity of
             mission, mindset, and action under pressure.
           </p>
         </div>
@@ -112,7 +115,7 @@ export default function AboutPage() {
           </div>
           <div className="relative aspect-[4/5] overflow-hidden">
             <Image
-              src="/founder-photos/EdThomas_3.jpeg"
+              src="/founder-photos/IraqPalace.jpeg"
               alt="Ed Thomas"
               fill
               className="object-cover"

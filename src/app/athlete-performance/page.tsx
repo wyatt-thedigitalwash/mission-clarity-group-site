@@ -84,7 +84,7 @@ export default function AthletePerformancePage() {
           <EditorialList
             items={[
               "Mental performance training",
-              "DISC behavioral analysis",
+              "DISCflex behavioral analysis",
               "Stress and recovery systems",
               "Competitive mindset development",
               "Performance routines",

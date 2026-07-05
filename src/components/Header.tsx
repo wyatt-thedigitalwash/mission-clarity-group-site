@@ -13,7 +13,7 @@ const performanceLinks = [
   { href: "/executive-advisory", label: "Executive Advisory" },
   { href: "/athlete-performance", label: "Athlete Performance" },
   { href: "/leadership-intensives", label: "Leadership Intensives" },
-  { href: "/disc-behavioral-analysis", label: "DISC Behavioral Analysis" },
+  { href: "/discflex-behavioral-analysis", label: "DISCflex Behavioral Analysis" },
 ];
 
 const navLinks = [
@@ -81,14 +81,13 @@ export default function Header() {
           {/* Wordmark */}
           <Link href="/" aria-label="Mission Clarity Group home">
             <Wordmark
-              compressed
-              className="h-[32px] w-auto lg:h-[44px]"
+              className="h-[38px] w-auto lg:h-[52px]"
               textColor={solid ? "var(--mcg-green)" : "var(--mcg-bone)"}
             />
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -210,8 +209,7 @@ export default function Header() {
             onClick={() => setMobileOpen(false)}
           >
             <Wordmark
-              compressed
-              className="h-[32px] w-auto"
+              className="h-[38px] w-auto"
               textColor="var(--mcg-bone)"
             />
           </Link>

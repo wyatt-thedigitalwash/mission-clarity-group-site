@@ -7,7 +7,7 @@ const footerLinks = [
   { href: "/executive-advisory", label: "Executive Advisory" },
   { href: "/athlete-performance", label: "Athlete Performance" },
   { href: "/leadership-intensives", label: "Leadership Intensives" },
-  { href: "/disc-behavioral-analysis", label: "DISC Behavioral Analysis" },
+  { href: "/discflex-behavioral-analysis", label: "DISCflex Behavioral Analysis" },
   { href: "/risk-advisory", label: "Risk Advisory" },
   { href: "/integrated-advisory", label: "Integrated Advisory" },
   { href: "/contact", label: "Contact" },
@@ -20,8 +20,7 @@ export default function Footer() {
         {/* Wordmark */}
         <Link href="/" aria-label="Mission Clarity Group home">
           <Wordmark
-            compressed
-            className="h-[40px] w-auto"
+            className="h-[50px] w-auto"
             textColor="var(--mcg-bone)"
           />
         </Link>

@@ -4,9 +4,9 @@ import Link from "next/link";
 import EditorialList from "@/components/EditorialList";
 
 export const metadata: Metadata = {
-  title: "DISC Behavioral Analysis — Mission Clarity Group",
+  title: "DISCflex Behavioral Analysis — Mission Clarity Group",
   description:
-    "DISC behavioral analysis to help leaders, executives, teams, and athletes improve communication, performance, stress management, and decision-making.",
+    "DISCflex behavioral analysis to help leaders, executives, teams, and athletes improve communication, performance, stress management, and decision-making.",
 };
 
 export default function DiscBehavioralAnalysisPage() {
@@ -17,7 +17,7 @@ export default function DiscBehavioralAnalysisPage() {
         <div className="absolute inset-0 bg-[#1e331f]">
           <Image
             src="/banners/MissionClarityGroup_ExecutiveAdvisoryHero.jpg"
-            alt="DISC Behavioral Analysis"
+            alt="DISCflex Behavioral Analysis"
             fill
             priority
             className="object-cover"
@@ -28,13 +28,13 @@ export default function DiscBehavioralAnalysisPage() {
         <div className="relative z-10 w-full px-5 py-32 md:px-12 lg:px-20">
           <div className="max-w-[680px]">
             <span className="font-body text-[11px] font-medium uppercase tracking-[0.15em] text-mcg-bone/70">
-              DISC Behavioral Analysis
+              DISCflex Behavioral Analysis
             </span>
             <h1 className="mt-5 text-mcg-bone">
               Understand the Operating System Behind Performance.
             </h1>
             <p className="mt-8 font-body text-[clamp(16px,1.8vw,18px)] leading-[1.65] text-mcg-bone/90">
-              Mission Clarity Group uses DISC behavioral analysis to help
+              Mission Clarity Group uses DISCflex behavioral analysis to help
               leaders, executives, teams, and athletes improve communication,
               performance, stress management, and decision-making.
             </p>
@@ -62,20 +62,20 @@ export default function DiscBehavioralAnalysisPage() {
             ]}
           />
           <p className="mt-10 font-body text-[clamp(16px,1.8vw,17px)] leading-[1.65] text-mcg-sage">
-            DISC creates clarity around these patterns.
+            DISCflex creates clarity around these patterns.
           </p>
         </div>
       </section>
 
-      {/* What DISC Reveals */}
+      {/* What DISCflex Reveals */}
       <section
         data-bg="light"
         className="bg-mcg-bone px-5 pb-24 md:px-12 md:pb-32"
       >
         <div className="mx-auto max-w-[920px]">
-          <h2>What DISC Reveals</h2>
+          <h2>What DISCflex Reveals</h2>
           <p className="mt-6 font-body text-[clamp(16px,1.8vw,17px)] leading-[1.65] text-mcg-sage">
-            Our DISC performance profiling identifies:
+            Our DISCflex performance profiling identifies:
           </p>
           <EditorialList
             items={[
@@ -100,7 +100,7 @@ export default function DiscBehavioralAnalysisPage() {
         <div className="mx-auto max-w-[920px]">
           <h2>Application</h2>
           <p className="mt-6 font-body text-[clamp(16px,1.8vw,17px)] leading-[1.65] text-mcg-sage">
-            DISC is integrated into:
+            DISCflex is integrated into:
           </p>
           <EditorialList
             items={[
@@ -138,16 +138,12 @@ export default function DiscBehavioralAnalysisPage() {
         </div>
       </section>
 
-      {/* Centered statement (parallax) */}
-      <section
-        className="parallax-bg relative px-5 py-20 md:px-12 md:py-28"
-        style={{ backgroundImage: "url(/banners/MissionClarityGroup_DISCHero.jpg)" }}
-      >
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 mx-auto max-w-[680px] text-center">
+      {/* Centered statement */}
+      <section className="bg-mcg-green px-5 py-20 md:px-12 md:py-28">
+        <div className="mx-auto max-w-[680px] text-center">
           <div className="mx-auto mb-8 h-px w-20 bg-mcg-gold" />
           <p className="font-display text-[clamp(22px,2.6vw,26px)] font-500 leading-[1.35] text-mcg-bone">
-            We do not use DISC as a personality label. We use it as a
+            We do not use DISCflex as a personality label. We use it as a
             strategic performance tool.
           </p>
           <div className="mx-auto mt-8 h-px w-20 bg-mcg-gold" />
@@ -166,7 +162,7 @@ export default function DiscBehavioralAnalysisPage() {
           </p>
           <EditorialList
             items={[
-              "Individual DISC debriefs",
+              "Individual DISCflex debriefs",
               "Performance reports",
               "Leadership insights",
               "Team dynamic analysis",
@@ -188,7 +184,7 @@ export default function DiscBehavioralAnalysisPage() {
             href="/contact"
             className="mt-12 inline-block rounded-[2px] border border-mcg-bone bg-transparent px-8 py-4 font-body text-[16px] font-medium text-mcg-bone transition-all hover:bg-mcg-bone hover:text-mcg-green"
           >
-            Schedule a DISC Performance Assessment
+            Schedule a DISCflex Performance Assessment
           </Link>
         </div>
       </section>

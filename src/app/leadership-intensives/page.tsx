@@ -99,7 +99,7 @@ export default function LeadershipIntensivesPage() {
               "Stress-response management",
               "Performance psychology",
               "Decision-making frameworks",
-              "Behavioral profiling through DISC",
+              "Behavioral profiling through DISCflex",
               "Human performance optimization",
               "Peak performance systems",
               "Recovery and sustainability",

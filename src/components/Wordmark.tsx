@@ -97,8 +97,8 @@ export default function Wordmark({
         textAnchor="middle"
         fill={textColor}
         fontFamily="var(--font-cormorant-garamond), 'Cormorant Garamond', serif"
-        fontSize="14"
-        fontWeight="400"
+        fontSize="16"
+        fontWeight="500"
         letterSpacing="0.5em"
       >
         GROUP

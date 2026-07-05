@@ -25,9 +25,9 @@ const offerings = [
     href: "/leadership-intensives",
   },
   {
-    name: "DISC Behavioral Analysis",
+    name: "DISCflex Behavioral Analysis",
     desc: "Behavioral profiling used as a strategic performance tool.",
-    href: "/disc-behavioral-analysis",
+    href: "/discflex-behavioral-analysis",
   },
 ];
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import EditorialList from "@/components/EditorialList";
 
 export const metadata: Metadata = {
   title: "Risk Advisory — Mission Clarity Group",
@@ -67,6 +68,26 @@ export default function RiskAdvisoryPage() {
               )
             )}
           </div>
+        </div>
+      </section>
+
+      {/* OUR RISK SERVICES */}
+      <section
+        data-bg="light"
+        className="bg-mcg-bone px-5 pb-24 md:px-12 md:pb-32"
+      >
+        <div className="mx-auto max-w-[920px]">
+          <h2>Our Risk Services</h2>
+          <EditorialList
+            items={[
+              "Family travel risk advisory",
+              "Business travel to high-threat environments",
+              "Family office physical, identity, and cyber security assessments",
+              "Foreign travel country reports",
+              "Enterprise Risk Assessment",
+              "Decision Advantage Advisory",
+            ]}
+          />
         </div>
       </section>
 

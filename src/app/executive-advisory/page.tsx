@@ -124,9 +124,10 @@ export default function ExecutiveAdvisoryPage() {
               "Decision-making frameworks",
               "Performance optimization systems",
               "Executive stress management",
-              "DISC behavioral analysis",
+              "DISCflex behavioral analysis",
               "Team alignment sessions",
               "Ongoing strategic partnership retainers",
+              "Leadership Risk Assessment",
             ]}
           />
         </div>
