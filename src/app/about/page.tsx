@@ -65,7 +65,7 @@ export default function AboutPage() {
         <div className="relative z-10 mx-auto max-w-[680px]">
           <div className="mx-auto mb-8 h-px w-20 bg-mcg-gold" />
           <p className="text-center font-display text-[clamp(22px,2.8vw,28px)] font-500 leading-[1.35] text-mcg-bone">
-            Sustained elite performance begins with clarity, clarity of
+            Sustained elite performance begins with clarity: clarity of
             mission, mindset, and action under pressure.
           </p>
           <div className="mx-auto mt-8 h-px w-20 bg-mcg-gold" />
@@ -93,7 +93,7 @@ export default function AboutPage() {
             leadership retreats, athlete development, and private coaching, Ed
             serves as a trusted advisor to individuals and teams navigating
             growth, pressure, and transition. His philosophy is simple:
-            sustained elite performance begins with clarity, clarity of
+            sustained elite performance begins with clarity: clarity of
             mission, mindset, and action under pressure.
           </p>
         </div>

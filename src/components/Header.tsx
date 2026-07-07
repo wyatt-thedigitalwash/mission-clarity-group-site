@@ -23,7 +23,7 @@ const navLinks = [
 
 function HamburgerIcon() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+    <svg className="h-6 w-6 md:h-7 md:w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
       <line x1="4" y1="7" x2="20" y2="7" />
       <line x1="4" y1="12" x2="20" y2="12" />
       <line x1="4" y1="17" x2="20" y2="17" />
@@ -33,7 +33,7 @@ function HamburgerIcon() {
 
 function CloseIcon() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+    <svg className="h-6 w-6 md:h-7 md:w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
       <line x1="6" y1="6" x2="18" y2="18" />
       <line x1="18" y1="6" x2="6" y2="18" />
     </svg>
@@ -81,13 +81,13 @@ export default function Header() {
           {/* Wordmark */}
           <Link href="/" aria-label="Mission Clarity Group home">
             <Wordmark
-              className="h-[38px] w-auto lg:h-[52px]"
+              className="h-[44px] w-auto min-[1440px]:h-[60px]"
               textColor={solid ? "var(--mcg-green)" : "var(--mcg-bone)"}
             />
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-6 min-[1440px]:flex" aria-label="Primary">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -181,7 +181,7 @@ export default function Header() {
           {/* Mobile menu toggle */}
           <button
             type="button"
-            className={`transition-all duration-300 hover:opacity-70 lg:hidden ${
+            className={`transition-all duration-300 hover:opacity-70 min-[1440px]:hidden ${
               solid ? "text-mcg-green" : "text-mcg-bone"
             }`}
             onClick={() => setMobileOpen((prev) => !prev)}
@@ -195,7 +195,7 @@ export default function Header() {
 
       {/* Full-screen mobile overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-mcg-green transition-all duration-500 ease-in-out lg:pointer-events-none lg:hidden ${
+        className={`fixed inset-0 z-40 bg-mcg-green transition-all duration-500 ease-in-out min-[1440px]:pointer-events-none min-[1440px]:hidden ${
           mobileOpen
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0"
@@ -209,7 +209,7 @@ export default function Header() {
             onClick={() => setMobileOpen(false)}
           >
             <Wordmark
-              className="h-[38px] w-auto"
+              className="h-[44px] w-auto"
               textColor="var(--mcg-bone)"
             />
           </Link>

@@ -22,9 +22,6 @@ export default function Home() {
 
         <div className="relative z-10 w-full px-5 py-32 md:px-12 lg:px-20">
           <div className="max-w-[680px]">
-            <p className="mb-6 font-display text-[clamp(20px,2.4vw,24px)] italic leading-[1.5] text-mcg-bone/80">
-              For the decisions that don&apos;t get a second pass.
-            </p>
             <h1 className="text-mcg-bone">
               Advisors to Leaders Operating in High-Consequence Environments
             </h1>

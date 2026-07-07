@@ -60,10 +60,14 @@ export default function Wordmark({
   }
 
   // Full lockup: top rule, MISSION CLARITY, GROUP, bottom rule
-  // Height: 1 (rule) + 18 (gap) + 32 (MC text) + 10 (gap) + 14 (GROUP text) + 18 (gap) + 1 (rule) = 94
+  // Height: 1 (rule) + 18 (gap) + 32 (MC text) + 10 (gap) + 16 (GROUP text) + 18 (gap) + 1 (rule) = 96
+  // Rules shortened to ~440px, centered within the 540px viewBox
+  const ruleX1 = 50;
+  const ruleX2 = w - 50;
+
   return (
     <svg
-      viewBox={`0 0 ${w} 94`}
+      viewBox={`0 0 ${w} 96`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       role="img"
@@ -72,9 +76,9 @@ export default function Wordmark({
       style={{ overflow: "visible" }}
     >
       <line
-        x1="0"
+        x1={ruleX1}
         y1="0.5"
-        x2={w}
+        x2={ruleX2}
         y2="0.5"
         stroke="var(--mcg-gold)"
         strokeWidth="1"
@@ -93,7 +97,7 @@ export default function Wordmark({
       </text>
       <text
         x={cx}
-        y="67"
+        y="69"
         textAnchor="middle"
         fill={textColor}
         fontFamily="var(--font-cormorant-garamond), 'Cormorant Garamond', serif"
@@ -104,10 +108,10 @@ export default function Wordmark({
         GROUP
       </text>
       <line
-        x1="0"
-        y1="93.5"
-        x2={w}
-        y2="93.5"
+        x1={ruleX1}
+        y1="95.5"
+        x2={ruleX2}
+        y2="95.5"
         stroke="var(--mcg-gold)"
         strokeWidth="1"
       />
